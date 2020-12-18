@@ -29,6 +29,13 @@
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
     </dependency>
+
+    <dependency>
+      <groupId>com.amazon.alexa</groupId>
+      <artifactId>ask-sdk</artifactId>
+      <version>2.35.0</version>
+    </dependency>
+
   </dependencies>
 
   <build>
