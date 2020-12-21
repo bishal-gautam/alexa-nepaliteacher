@@ -1,5 +1,7 @@
 package com.nepaliteacher.alexanepaliteacher.handlers;
 
+import static com.amazon.ask.request.Predicates.intentName;
+
 import com.amazon.ask.dispatcher.request.handler.HandlerInput;
 import com.amazon.ask.dispatcher.request.handler.RequestHandler;
 import com.amazon.ask.model.Response;
@@ -9,11 +11,16 @@ public class CancelAndStopIntentHandler implements RequestHandler {
 
   @Override
   public boolean canHandle(HandlerInput handlerInput) {
-    return false;
+    return handlerInput.matches(intentName("AMAZON.CancelIntent")
+        .or(intentName("AMAZON.StopIntent")));
   }
 
   @Override
   public Optional<Response> handle(HandlerInput handlerInput) {
-    return Optional.empty();
+    String speechText = "Goodbye from Nepali Teacher.";
+    return handlerInput.getResponseBuilder()
+        .withSpeech(speechText)
+        .withSimpleCard("Nepali Teacher", speechText)
+        .build();
   }
 }
