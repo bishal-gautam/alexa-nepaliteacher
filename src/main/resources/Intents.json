@@ -1,0 +1,66 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "nepali teacher",
+      "modelConfiguration": {
+        "fallbackIntentSensitivity": {
+          "level": "LOW"
+        }
+      },
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "NepaliAlphabetsIntent",
+          "slots": [],
+          "samples": [
+            "nepali alphabets learn",
+            "nepali alphabets learning",
+            "nepali alphabets teach",
+            "nepali alphabet",
+            "teach nepali alphabets",
+            "teach nepali alphabet",
+            "teach me nepali alphabet",
+            "teach me nepali varnamala",
+            "nepali letters",
+            "teach me nepali letters",
+            "ka kha ga gha",
+            "teach me ka gha ga gha",
+            "ka kha ga",
+            "I want to learn nepali alphabets",
+            "tell me nepali alphabets",
+            "nepali alphabets",
+            "teach me nepali alphabets"
+          ]
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        }
+      ],
+      "types": []
+    }
+  }
+}
