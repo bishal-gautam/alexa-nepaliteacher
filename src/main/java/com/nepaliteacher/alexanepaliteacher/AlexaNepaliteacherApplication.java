@@ -4,10 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AlexaNepaliTeacherApplication {
+public class AlexaNepaliteacherApplication {
 
   public static void main(String[] args) {
-    SpringApplication.run(AlexaNepaliTeacherApplication.class, args);
+    SpringApplication.run(AlexaNepaliteacherApplication.class, args);
   }
-
 }
